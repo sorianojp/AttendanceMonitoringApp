@@ -27,7 +27,7 @@ class _AttendanceScreenState extends State<AttendanceScreen> {
 
     final response = await http.get(
       Uri.parse(
-          'http://146.190.99.93/api/attendances'), // Replace with your API URL
+          'https://isuddattendance.cdd.edu.ph/api/attendances'), // Replace with your API URL
       headers: {
         'Authorization': 'Bearer $token',
       },
