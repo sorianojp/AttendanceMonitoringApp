@@ -131,6 +131,39 @@ class _AttendanceScreenState extends State<AttendanceScreen> {
                                 text: TextSpan(
                                   children: [
                                     TextSpan(
+                                      text: 'is already ', // Common text
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                      children: [
+                                        TextSpan(
+                                          text: status == 'In'
+                                              ? 'inside'
+                                              : 'outside', // Conditionally show text
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.black,
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              ' the school campus.\n', // Common text
+                                          style: TextStyle(
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    TextSpan(
+                                      text: '\n', // Label for Entry
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          color:
+                                              Colors.black), // Bold and black
+                                    ),
+                                    TextSpan(
                                       text: 'Entry: ', // Label for Entry
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
